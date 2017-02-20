@@ -1,0 +1,80 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title></title>
+
+    <style>
+        .block {
+            display: block;
+            margin: 10px;
+            border: 2px dotted gray;
+            padding: 10px;
+        }
+
+        #menu ul li {
+            display: inline-block;
+            width: 300px;
+            height: 30px;
+            text-align: center;
+            border: 1px solid #1F98C7;
+            background-color: #58B3F0;
+            margin: 10px;
+            line-height: 30px;
+            vertical-align: middle;
+        }
+
+        #menu a {
+            color: #ad1111;
+            text-decoration: none;
+            font-size: smaller;
+            font-size: large;
+        }
+
+        #menu li:hover {
+            background-color: #78C1DD;
+        }
+
+            #menu li:hover a {
+                color: aliceblue;
+            }
+    </style>
+</head>
+<body>
+
+    <div class="block">
+        <h2>Lionel Messi Blog Page</h2>
+        <h4> Ne Mutlu Turkum Diyene</h4>
+    </div>
+
+    <div class="block">
+
+        <p>Tincidunt integer eu augue augue nunc elit dolor, luctus placerat scelerisque euismod, iaculis eu lacus nunc mi elit, vehicula ut laoreet ac, aliquam sit amet justo nunc tempor, metus vel.</p>
+        <p>Placerat suscipit, orci nisl iaculis eros, a tincidunt nisi odio eget lorem nulla condimentum tempor mattis ut vitae feugiat augue cras ut metus a risus iaculis scelerisque eu ac ante.</p>
+    </div>
+
+    <div class="block">
+        @RenderBody()
+    </div>
+
+    <div id="menu" class="block">
+        @*header*@
+        <ul>
+            <li>
+                @Html.ActionLink("Home Page", "homepage", "Home")
+            </li>
+            <li>
+                @Html.ActionLink("About", "about", "Home")
+            </li>
+            <li>
+                @Html.ActionLink("Contact", "contact", "Home")
+            </li>
+        </ul>
+    </div>
+    <div class="block">
+        @*footer*@
+        <b> Tum Haklari Saklidir &copy;</b>
+    </div>
+</body>
+</html>
