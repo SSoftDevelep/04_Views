@@ -130,6 +130,7 @@
   <ItemGroup>
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\Home2Controller.cs" />
+    <Compile Include="Controllers\Home3Controller.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -155,6 +156,9 @@
     <Content Include="Views\Shared\_LayoutPage3.cshtml" />
     <Content Include="Views\Home2\contact1.cshtml" />
     <Content Include="Views\Home2\contact2.cshtml" />
+    <Content Include="Views\Shared\_LayoutPage4.cshtml" />
+    <Content Include="Views\Home3\blog.cshtml" />
+    <Content Include="Views\Home3\blog2.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
