@@ -6,20 +6,11 @@ using System.Web.Mvc;
 
 namespace _04_Views.Controllers
 {
-    public class HomeController : Controller
+    public class Home2Controller : Controller
     {
         // GET: Home
-        public ActionResult homepage()
-        {
-            return View();
-        }
-        //hakkimizda
-        public ActionResult about()
-        {
-            return View();
-        }
         //iletisim
-        public ActionResult contact()
+        public ActionResult contact1()
         {
             return View();
         }
@@ -28,5 +19,6 @@ namespace _04_Views.Controllers
         {
             return View();
         }
+
     }
 }
